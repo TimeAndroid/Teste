@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Find Pack Recycler</string>
+    <string name="rastreamento">Rastreamento</string>
+    <string name="data">Data</string>
+    <string name="descricao">Descricao</string>
+
+</resources>

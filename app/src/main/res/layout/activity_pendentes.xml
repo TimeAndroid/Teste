@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/itens_pendentes"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/icon_pendentes"
+            android:contentDescription="pendentes" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rastreamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/rastreamento"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rastreamento"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="@string/descricao"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/rastreamento"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="@string/data"
+        android:textSize="14sp" />
+
+</RelativeLayout>
