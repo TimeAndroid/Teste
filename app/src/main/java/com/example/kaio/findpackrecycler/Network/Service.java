@@ -7,15 +7,16 @@ import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.HeaderMap;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface Service {
 
 
+    @Headers("Content-Type:application/json")
     @POST("/rastreamento")
-
-    Call<ResponseCorreios>PegarResultados(@HeaderMap Map<String,String> headers, @Body Cod cod);
-
+    Call<ResponseCorreios> PegarResultado(@Body Cod cod);
 
 }

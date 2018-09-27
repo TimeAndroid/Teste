@@ -10,7 +10,7 @@ public class Config {
 
 
     private static Retrofit retrofit;
-    private static final String BASE_URL = "lilithamor.herokuapp.com";
+    private static final String BASE_URL = "https://lilithamor.herokuapp.com";
 
     public static Retrofit getRetrofitInstance() {
 
